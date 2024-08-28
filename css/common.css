@@ -30,3 +30,14 @@ a {
 
 .header__inner {
 }
+
+/* header */
+/* gnav */
+.gnav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gnav__list {
+  display: flex;
+}
