@@ -1,13 +1,13 @@
 @charset "UTF-8";
 /* コピペ用コード */
-.font-size-dummy {
-  font-size: 0.75rem; /* 12px */
-  font-size: 0.8125rem; /* 13px */
-  font-size: 0.875rem; /* 14px */
-  font-size: 1rem; /* 16px */
-  font-size: 1.25rem; /* 20px */
-  font-size: 1.5rem; /* 24px */
-  font-size: 1.75rem; /* 28px */
+:root {
+  --font-12: 0.75rem; /* 12px */
+  --font-13: 0.8125rem; /* 13px */
+  --font-14: 0.875rem; /* 14px */
+  --font-16: 1rem; /* 16px */
+  --font-20: 1.25rem; /* 20px */
+  --font-24: 1.5rem; /* 24px */
+  --font-28: 1.75rem; /* 28px */
 }
 @media screen and (max-width: 896px) {
 }
@@ -32,6 +32,16 @@ a {
 }
 
 /* header */
+.header__inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  border-bottom: 1px solid #c3c3c3;
+}
+
+.header__logo {
+  text-align: center;
+}
+
 /* gnav */
 .gnav {
   display: flex;
@@ -40,4 +50,28 @@ a {
 
 .gnav__list {
   display: flex;
+}
+
+/* main */
+.sec__inner {
+  max-width: 800px;
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 0 auto;
+}
+
+.sec-ttl {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.sec__desc {
+  font-size: 0.75rem;
+  line-height: 1.9;
+}
+
+/* footer */
+.footer__copyright {
+  display: block;
+  text-align: center;
 }
