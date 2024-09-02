@@ -45,73 +45,73 @@
 
     <!-- main -->
     <main class="main">
-      <section class="sec">
-        <div class="sec__inner">
-          <div class="sec--right">
-            <div class="sec--right">
-              <h2 class="sec-ttl">TOTALLY Short Sleeve Shirt</h2>
-              <div>
-                <p class="sec__desc">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキスト</p>
-                <span>&yen; 9,999 &plus;tax</span>
-              </div>
-              <!-- cart
-                -->
-              <section class="cart">
-                <h3 class="hidden">ショッピングカート</h3>
-                <form action="sample.php">
-                  <table border="1" class="cart__body">
-                    <thead>
-                      <tr class="">
-                        <th>Color</th>
-                        <th>Size</th>
-                        <th class="hidden">個数</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>White</td>
-                        <td>S</td>
-                        <td>
-                          <select name="count">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                          </select>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>White</td>
-                        <td>M</td>
-                        <td>
-                          <select name="count">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                          </select>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>White</td>
-                        <td>L</td>
-                        <td>
-                          <select name="count">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                          </select>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <input type="submit" value="ADD TO CART" />
-                </form>
-              </section>
+      <section class="product">
+        <div class="product__inner">
+          <!-- product__inner---right -->
+          <div class="product__inner--right">
+            <h2 class="product__ttl">TOTALLY Short Sleeve Shirt</h2>
+            <div class="product__desc">
+              <p class="product__txt">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキスト</p>
+              <span class="product__price">&yen; 9,999 &plus;tax</span>
             </div>
+
+            <!-- cart -->
+            <section class="cart">
+              <h3 class="hidden">ショッピングカート</h3>
+              <form action="sample.php" class="cart__form">
+                <table class="cart__table">
+                  <col span="3" class="cart__col" />
+                  <thead>
+                    <tr class="cart__row">
+                      <th>Color</th>
+                      <th>Size</th>
+                      <th class="hidden">個数</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="cart__row">
+                      <td>White</td>
+                      <td>S</td>
+                      <td>
+                        <select name="count">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr class="cart__row">
+                      <td>White</td>
+                      <td>M</td>
+                      <td>
+                        <select name="count">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr class="cart__row">
+                      <td>White</td>
+                      <td>L</td>
+                      <td>
+                        <select name="count">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                        </select>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <input type="submit" value="ADD TO CART" class="cart__btn" />
+              </form>
+            </section>
 
             <!-- size -->
             <section class="size">
               <h3 class="hidden">サイズ表</h3>
-              <table>
+              <table class="seize__table">
                 <thead>
                   <tr>
                     <th>Size</th>
@@ -144,7 +144,8 @@
             </section>
           </div>
 
-          <img src="./img/item.jpg" width="400" height="500" alt="胸元にTOTALLYの黒いロゴの入ったピンクのショートスリーブシャツ" />
+          <!-- product__inner---left -->
+          <div class="product__inner--left"><img src="./img/item.jpg" width="400" height="500" alt="胸元にTOTALLYの黒いロゴの入ったピンクのショートスリーブシャツ" /></div>
         </div>
       </section>
     </main>
