@@ -173,3 +173,8 @@ select,
 option {
   width: 100%;
 }
+
+select {
+  -webkit-appearance: none;
+  appearance: none;
+}
