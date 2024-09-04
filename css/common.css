@@ -176,6 +176,8 @@ a {
 
 .cart__select {
   border: 1px solid var(--line-color);
+  color: var(--font-color);
+  padding: 0 10px;
 }
 
 .cart__btn {
