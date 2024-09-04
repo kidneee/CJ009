@@ -177,4 +177,5 @@ option {
 select {
   -webkit-appearance: none;
   appearance: none;
+  border: none;
 }
