@@ -20,8 +20,10 @@
   /* ボタンカラー */
   --btn-color: #4b4b4b;
 }
-@media screen and (max-width: 896px) {
-}
+
+/* メディアクエリ */
+/* @media screen and (max-width: 896px) {
+} */
 
 /* 共通 */
 body {
