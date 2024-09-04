@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /* コピペ用コード */
 :root {
+  /* フォントサイズ */
   --font-12: 0.75rem; /* 12px */
   --font-13: 0.8125rem; /* 13px */
   --font-14: 0.875rem; /* 14px */
@@ -8,6 +9,15 @@
   --font-20: 1.25rem; /* 20px */
   --font-24: 1.5rem; /* 24px */
   --font-28: 1.75rem; /* 28px */
+
+  /* 文字カラー */
+  --font-color: #333;
+
+  /* ラインカラー */
+  --line-color: #c3c3c3;
+
+  /* ボタンカラー */
+  --btn-color: #4b4b4b;
 }
 @media screen and (max-width: 896px) {
 }
@@ -15,20 +25,18 @@
 /* 共通 */
 body {
   font-family: 'Raleway', sans-serif;
-  color: #333;
+  color: var(--font-color);
   line-height: normal;
 }
 
 a {
-  color: #333;
+  color: var(--font-color);
   text-decoration: none;
 }
 
-.hidden {
-  display: none;
-}
-
-.header__inner {
+.cart,
+.size {
+  font-size: var(--font-12);
 }
 
 /* header */
@@ -36,7 +44,7 @@ a {
   max-width: 1000px;
   margin: 0 auto 50px;
   padding: 46px 100px 26px;
-  border-bottom: 1px solid #c3c3c3;
+  border-bottom: 1px solid var(--line-color);
 }
 
 .header__logo {
@@ -66,7 +74,7 @@ a {
   display: grid;
   grid-template-columns: 50% 50%;
   flex-direction: row-reverse;
-  margin: 0 auto;
+  margin: 0 auto 110px;
 }
 
 .product__inner--right {
@@ -83,8 +91,8 @@ a {
 .product__ttl {
   font-size: var(--font-16);
   font-weight: 700;
-  border-top: 1px solid #c3c3c3;
-  border-bottom: 1px solid #c3c3c3;
+  border-top: 1px solid var(--line-color);
+  border-bottom: 1px solid var(--line-color);
   padding: 20px 0;
   margin-bottom: 20px;
 }
@@ -104,23 +112,56 @@ a {
 }
 
 /* cart */
+.cart {
+  margin-bottom: 30px;
+}
+
 .cart__table {
+  width: 100%;
   margin-bottom: 20px;
+  border-collapse: collapse;
+  text-align: center;
 }
 
-.cart__col:not(:last-of-type) {
-  border-right: 1px solid #c3c3c3;
+.cart__table-header,
+.cart__body-row:not(:last-of-type) {
+  border-bottom: 1px solid var(--line-color);
 }
 
-.cart__row:not(:last-of-type) {
-  border-bottom: 1px solid #c3c3c3;
+.cart__header-cell:not(:last-of-type),
+.cart__body-cell:not(:last-of-type) {
+  border-right: 1px solid var(--line-color);
+  padding: 10px 0;
+}
+
+.cart__header-cell {
+  /* border-bottom: 1px solid var(--line-color); */
 }
 
 .cart__btn {
-  background: #4b4b4b;
+  background: var(--btn-color);
   color: #fff;
   width: 100%;
   height: 50px;
+}
+
+/* size */
+.size__table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid var(--line-color);
+  text-align: center;
+}
+
+.size__table-header,
+.size__body-cell:first-of-type {
+  background: #ecebeb;
+}
+
+.size__header-cell,
+.size__body-cell {
+  border: 1px solid var(--line-color);
+  padding: 10px 0;
 }
 
 /* footer */

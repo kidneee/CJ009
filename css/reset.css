@@ -168,3 +168,8 @@ textarea {
   border: none;
   padding: 0;
 }
+
+select,
+option {
+  width: 100%;
+}

@@ -23,7 +23,7 @@
         </h1>
 
         <!-- gnav -->
-        <nav class="gnav">
+        <nav class="gnav" aria-label="グローバルナビゲーション">
           <h2 class="hidden">グローバルナビゲーション</h2>
           <ul class="gnav__list gnav__list--left">
             <li class="gnav__item"><a href="#" class="gnav__link">All</a></li>
@@ -47,7 +47,7 @@
     <main class="main">
       <section class="product">
         <div class="product__inner">
-          <!-- product__inner---right -->
+          <!-- product__inner--right -->
           <div class="product__inner--right">
             <h2 class="product__ttl">TOTALLY Short Sleeve Shirt</h2>
             <div class="product__desc">
@@ -56,49 +56,47 @@
             </div>
 
             <!-- cart -->
-            <section class="cart">
-              <h3 class="hidden">ショッピングカート</h3>
+            <div class="cart" aria-label="ショッピングカート">
               <form action="sample.php" class="cart__form">
                 <table class="cart__table">
-                  <col span="3" class="cart__col" />
-                  <thead>
-                    <tr class="cart__row">
-                      <th>Color</th>
-                      <th>Size</th>
-                      <th class="hidden">個数</th>
+                  <thead class="cart__table-header">
+                    <tr class="cart__header-row">
+                      <th class="cart__header-cell">Color</th>
+                      <th class="cart__header-cell">Size</th>
+                      <th class="cart__header-cell">個数</th>
                     </tr>
                   </thead>
-                  <tbody>
-                    <tr class="cart__row">
-                      <td>White</td>
-                      <td>S</td>
-                      <td>
-                        <select name="count">
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
+                  <tbody class="cart__tabele-body">
+                    <tr class="cart__body-row">
+                      <td class="cart__body-cell">White</td>
+                      <td class="cart__body-cell">S</td>
+                      <td class="cart__body-cell">
+                        <select name="count" class="cart__select">
+                          <option value="1" class="cart__option">1</option>
+                          <option value="2" class="cart__option">2</option>
+                          <option value="3" class="cart__option">3</option>
                         </select>
                       </td>
                     </tr>
-                    <tr class="cart__row">
-                      <td>White</td>
-                      <td>M</td>
-                      <td>
-                        <select name="count">
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
+                    <tr class="cart__body-row">
+                      <td class="cart__body-cell">White</td>
+                      <td class="cart__body-cell">M</td>
+                      <td class="cart__body-cell">
+                        <select name="count" class="cart__select">
+                          <option value="1" class="cart__option">1</option>
+                          <option value="2" class="cart__option">2</option>
+                          <option value="3" class="cart__option">3</option>
                         </select>
                       </td>
                     </tr>
-                    <tr class="cart__row">
-                      <td>White</td>
-                      <td>L</td>
-                      <td>
-                        <select name="count">
-                          <option value="1">1</option>
-                          <option value="2">2</option>
-                          <option value="3">3</option>
+                    <tr class="cart__body-row">
+                      <td class="cart__body-cell">White</td>
+                      <td class="cart__body-cell">L</td>
+                      <td class="cart__body-cell">
+                        <select name="count" class="cart__select">
+                          <option value="1" class="cart__option">1</option>
+                          <option value="2" class="cart__option">2</option>
+                          <option value="3" class="cart__option">3</option>
                         </select>
                       </td>
                     </tr>
@@ -106,45 +104,44 @@
                 </table>
                 <input type="submit" value="ADD TO CART" class="cart__btn" />
               </form>
-            </section>
+            </div>
 
             <!-- size -->
-            <section class="size">
-              <h3 class="hidden">サイズ表</h3>
-              <table class="seize__table">
-                <thead>
-                  <tr>
-                    <th>Size</th>
-                    <th>Chest</th>
-                    <th>West</th>
-                    <th>Height</th>
+            <div class="size" aria-label="サイズ表">
+              <table class="size__table">
+                <thead class="size__table-header">
+                  <tr class="size__header-row">
+                    <th class="size__header-cell">Size</th>
+                    <th class="size__header-cell">Chest</th>
+                    <th class="size__header-cell">Waist</th>
+                    <th class="size__header-cell">Height</th>
                   </tr>
                 </thead>
-                <tbody>
-                  <tr>
-                    <td>S</td>
-                    <td>99 ～ 99</td>
-                    <td>99 ～ 99</td>
-                    <td>99 ～ 99</td>
+                <tbody class="size__table-body">
+                  <tr class="size__body-row">
+                    <td class="size__body-cell">S</td>
+                    <td class="size__body-cell">99 ～ 99</td>
+                    <td class="size__body-cell">99 ～ 99</td>
+                    <td class="size__body-cell">99 ～ 99</td>
                   </tr>
-                  <tr>
-                    <td>M</td>
-                    <td>99 ～ 99</td>
-                    <td>99 ～ 99</td>
-                    <td>99 ～ 99</td>
+                  <tr class="size__body-row">
+                    <td class="size__body-cell">M</td>
+                    <td class="size__body-cell">99 ～ 99</td>
+                    <td class="size__body-cell">99 ～ 99</td>
+                    <td class="size__body-cell">99 ～ 99</td>
                   </tr>
-                  <tr>
-                    <td>L</td>
-                    <td>99 ～ 99</td>
-                    <td>99 ～ 99</td>
-                    <td>99 ～ 99</td>
+                  <tr class="size__body-row">
+                    <td class="size__body-cell">L</td>
+                    <td class="size__body-cell">99 ～ 99</td>
+                    <td class="size__body-cell">99 ～ 99</td>
+                    <td class="size__body-cell">99 ～ 99</td>
                   </tr>
                 </tbody>
               </table>
-            </section>
+            </div>
           </div>
 
-          <!-- product__inner---left -->
+          <!-- product__inner--left -->
           <div class="product__inner--left"><img src="./img/item.jpg" width="400" height="500" alt="胸元にTOTALLYの黒いロゴの入ったピンクのショートスリーブシャツ" /></div>
         </div>
       </section>
